@@ -1,0 +1,43 @@
+{
+  "name": "baliv-offchain",
+  "version": "0.6.1",
+  "description": "Decentralize Cypto Currency Exchange Offchain Engine",
+  "main": "bin/start.js",
+  "bin": {
+    "simple": "bin/start.js",
+    "simple-backend": "bin/start.js"
+  },
+  "scripts": {
+    "start": "node bin/start.js",
+    "test": "mocha test/XPAAssets.test.js",
+    "test-report": "mocha test/XPAAssets.test.js --reporter mocha-simple-html-reporter --reporter-options output=report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Luphia/SIMPLE.git"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "Luphia Chang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Luphia/SIMPLE/issues"
+  },
+  "homepage": "https://github.com/Luphia/SIMPLE",
+  "dependencies": {
+    "fs-extra": "^5.0.0",
+    "ganache-cli": "^6.1.0",
+    "mocha": "^5.0.1",
+    "solc": "^0.4.20",
+    "web3": "^1.0.0-beta.26"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "mocha-simple-html-reporter": "^1.1.0"
+  }
+}
