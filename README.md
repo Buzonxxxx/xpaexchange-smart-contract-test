@@ -8,4 +8,6 @@
 
 4. Execute Test `npm test`
 
+5. Generate test report `npm run test-report`
+
 Contracts are from https://github.com/XPAEXCHANGE/smart-contracts
