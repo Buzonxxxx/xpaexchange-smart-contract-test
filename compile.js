@@ -2,7 +2,6 @@ const path = require('path')
 const fs = require('fs-extra')
 const solc = require('solc')
 
-
 const contracts = ["StandardToken", "FundAccount", "Baliv", "TokenFactory", "XPAAssets"]
 
 contracts.forEach(contract => {
@@ -13,8 +12,9 @@ contracts.forEach(contract => {
   // __dirname: root directory
   const ContractPath = path.resolve(__dirname, 'contracts', `${contract}.sol`)
   const source = fs.readFileSync(ContractPath, 'utf8')
-  const output = solc.compile(source, 1).contracts
-
+  const output = solc.compile(source, 1).contracts  //number of contract: 1
+  console.log(`Compiling contract...`)
+  console.log(`Contract name: ${contract}`)
   // check and create build folder
   fs.ensureDirSync(buildPath)
 
