@@ -1,5 +1,7 @@
 # How to execute the test?
-1.`git clone [the repo]`
+1.Clone the repo
+
+`git clone [the repo]`
 
 2.Install dependencies
 
